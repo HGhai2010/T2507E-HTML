@@ -1,0 +1,19 @@
+h1{
+    color:red;
+}
+p{
+    color:green;
+    font-size: 69px;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-weight: 400;
+    word-spacing: 1px;
+    width:600px;
+    background-color: deeppink;
+    p{
+        margin-bottom: 0.75rem;
+    }
+}

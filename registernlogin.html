@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="registernlogin.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+
+      <div class="logo">Tech.</div>
+
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PAGES</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">BLOG</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="login-box">
+    <input type="radio" name="tab" id="tab-login" checked>
+    <input type="radio" name="tab" id="tab-register">
+
+    <div class="form-wrapper">
+      <div class="form-tabs">
+        <label for="tab-login" class="tab">Login</label>
+        <label for="tab-register" class="tab">Register</label>
+      </div>
+
+      <div class="form-content login-content">
+        <form>
+          <div class="form-group">
+            <label><b>Email</b></label>
+            <input type="email" placeholder="E-mail address" required>
+          </div>
+          <div class="form-group">
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter password" required>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </div>
+
+      <div class="form-content register-content">
+        <form>
+          <div class="form-group">
+            <label><b>Full Name</b></label>
+            <input type="text" placeholder="Enter full name" required>
+          </div>
+          <div class="form-group">
+            <label><b>Email</b></label>
+            <input type="email" placeholder="E-mail address" required>
+          </div>
+          <div class="form-group">
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter password" required>
+          </div>
+          <div class="form-group">
+            <label><b>Confirm Password</b></label>
+            <input type="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

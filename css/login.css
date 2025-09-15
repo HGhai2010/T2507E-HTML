@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: #fff7ef;
+    height: 100%;
+}
+
+.ioform-layout {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.form-body .form-holder {
+    margin-left: 0;
+    width: 100%;
+}
+
+.form-content {
+    background-color: transparent;
+    padding: 60px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-content .image-container img {
+    max-width: 480px;
+}
+
+.form-items {
+    padding: 35px 30px;
+    background-color: #f7941d;
+    max-width: 380px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img-float {
+    position: absolute;
+    top: -4rem;
+    left: -6.2rem;
+    width: 6rem;
+}
+
+.website-logo-inside {
+    margin-bottom: 20px;
+}
+
+.website-logo-inside img {
+    max-width: 100px;
+}
+
+.font-md {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 14px;
+    line-height: 1.5;
+    padding: 9px 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+    /* đổi font ở đây */
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;  /* đậm hơn một chút */
+  letter-spacing: 0.5px; /* khoảng cách chữ đẹp hơn */
+  text-transform: uppercase; /* in hoa chữ trên nút (tùy thích) */
+}
+.other-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.other-links a {
+    margin: 0 5px;
+    color: #f7941d;
+    text-decoration: none;
+    font-weight: 600;
+}

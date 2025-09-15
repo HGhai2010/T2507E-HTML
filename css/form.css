@@ -1,0 +1,13 @@
+.form-group{
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-group label{
+    float: left;
+    width:100%;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red
+}
