@@ -25,5 +25,12 @@ var rvHtml ="";
 for(var i=0; i<sp.reviews.length; i++){
     var rate=sp.review[i].rate;
     var review=sp.review[i].review;
-    rvHtml = rvHtml + "<li>" ${sp.reviews[i].rate}*-${sp.review[i].review} </li>
+    rvHtml = `${rvHtml}<li>` ${sp.reviews[i].rate}*-${sp.review[i].review} </li>
 }
+ const url = "http://127.0.0.1:5500/data/product.json"
+ fetch(url).then(rs=>rs.json())
+ .then(function(data){
+ });
+
+ //su dung du lieu
+ me=document
