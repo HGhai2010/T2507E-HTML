@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color: #e1e8ed;
+}
+a:hover{/*set sẵn màu cho hover,link*/
+        color:rgb(238, 7, 7)
+        color:rgb(158, 157, 157);
+}
+body{
+    background-color: rgb(250, 246, 242);
+    background-color: rgb(255, 255, 255);
+    color:rgb(4, 3, 3);
+    font-size: 14px;
+    font-weight: 400;
+@@ -47,4 +48,14 @@
+    color:beige;
+    font-size: 18px;
+    font-weight: 500;
+}
+    float: left;
+}
+.box2-header{
+    float: left;
+    display: flex;
+    gap:4px;
+    padding-top: 15px;
+    line-height: 31px;
+    height: 40px;
+    border-bottom: #e1e8ed 1px solid;
+}

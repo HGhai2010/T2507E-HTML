@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product List - EPROM Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;1,100;0,300;1,300;0,400;1,400;0,700;1,700;0,900;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="list.css" />
+</head>
+<body>
+  <!--Top bar -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <a href="#">Privacy</a>
+      <a href="#">About</a>
+      <a href="loginmusic.html">My account</a>
+    </div>
+    <div class="topbar-right">
+      <span class="cart-price">£0.00</span>
+      <span class="cart-items">0 items</span>
+      <a href="#" class="checkout">Checkout</a>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Epron</div>
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="homemusic.css">Home</a></li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Releases</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Recent</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Releases Section -->
+  <section class="releases">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="Thiết kế chưa có tên (3).mp4" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ video.
+    </video>
+    <div class="page-header">
+      <h1><span>Releases</span></h1>
+      <p>Listen our Tracks & Mixes.</p>
+    </div>
+  </section>
+
+  <!--Filter + Search -->
+  <div class="controls-bar">
+    <div class="btn-group">
+      <button class="btn active" data-filter="all">All</button>
+      <button class="btn" data-filter="album">Album</button>
+      <button class="btn" data-filter="merch">Merch</button>
+    </div>
+    <div class="search-sort">
+      <select class="select" id="sort">
+        <option value="name">Order: Name</option>
+        <option value="year">Order: Newest</option>
+      </select>
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search for items" />
+      </div>
+    </div>
+  </div>
+  <!-- 🔹 Product Grid -->
+  <div class="product-grid" id="productGrid">
+    <!-- 6 sản phẩm hiện ban đầu -->
+    <div class="product-item" data-category="album" data-name="Album One" data-year="2025">
+      <div class="cover">
+        <img src="download (4).jpg" alt="Album One">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>No Emergency Door</h3><p>なとり / natori · Instrumentalist</p></div>
+    </div>
+    <div class="product-item" data-category="album" data-name="Burn out" data-year="2022">
+      <div class="cover">
+        <img src="254813f79ddec278d07b7335f0482b6f.662x496x1.png" alt="Burn out">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>Burn Out</h3><p> Boywithuke · Guitar n uke</p></div>
+    </div>
+
+    <div class="product-item" data-category="album" data-name="Sinking Happiness" data-year="2023">
+      <div class="cover">
+        <img src="web.ae_.dominicfike.review.courtesy.jpg" alt="Sinking Happiness">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>Sinking Happiness</h3><p>Dominic Fike · Drum n Bass</p></div>
+    </div>
+
+    <div class="product-item" data-category="merch" data-name="T-shirt Black" data-year="2025">
+      <div class="cover">
+        <img src="BurnoutTee-1200.webp" alt="T-shirt Black">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>BurnOut Tee</h3><p> $39.99 · T-shirt</p></div>
+    </div>
+
+    <div class="product-item" data-category="merch" data-name="Cap White" data-year="2024">
+      <div class="cover">
+        <img src="Sakura_T-Shirt.webp" alt="Cap White">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>JPNESE TOUR</h3><p>2024 · $7.99</p></div>
+    </div>
+
+    <div class="product-item" data-category="album" data-name="Album Four" data-year="2022">
+      <div class="cover">
+        <img src="download (5).jpg" alt="Album Four">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>Lucid Dream</h3><p>Boywithuke · Guitar n uke</p></div>
+    </div>
+
+    <!-- 3 sản phẩm ẩn ban đầu -->
+    <div class="product-item hidden" data-category="merch" data-name="Hoodie Red" data-year="2021">
+      <div class="cover">
+        <img src="040720-merch_tiedyehoodie-both.webp" alt="Hoodie Red">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>Cockpit Members</h3><p>2021 · $19.99</p></div>
+    </div>
+
+    <div class="product-item hidden" data-category="merch" data-name="Poster Limited" data-year="2020">
+      <div class="cover">
+        <img src="SECL-3250_1100x.webp" alt="Poster Limited">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>IRIS OUT</h3><p>JANE DOE-2025 · $4.99</p></div>
+    </div>
+
+    <div class="product-item hidden" data-category="album" data-name="Album Five" data-year="2019">
+      <div class="cover">
+        <img src="tumblr_nlott6smih1ta3rfmo1_1280.jpg" alt="Album Five">
+        <div class="overlay"><button class="viewBtn"><b>View Details</b></button></div>
+      </div>
+      <div class="product-info"><h3>Heathens</h3><p>Twenty One Pilot · Band</p></div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+  <footer class="footer">
+  <!-- Top Info -->
+  <div class="footer-top">
+    <div class="footer-info">
+      <span><i class="fas fa-map-marker-alt"></i> Fpt academy, Hanoi Vietnam</span>
+      <span><i class="fas fa-phone"></i> (85+) 469 7009</span>
+      <span><i class="fas fa-envelope"></i> haaipjg@gmail.com</span>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fas fa-share-alt"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-soundcloud"></i></a>
+      <a href="#"><i class="fab fa-spotify"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- Main Footer -->
+  <div class="footer-main">
+    <!-- Categories -->
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Interviews</a></li>
+        <li><a href="#">Listen</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Watch</a></li>
+      </ul>
+    </div>
+
+    <!-- Recent Posts -->
+    <div class="footer-col">
+      <h4>Recent Posts</h4>
+      <div class="post">
+        <img src="hq720 (1).jpg" alt="">
+        <div>
+          <span>LISTEN · NEWS</span>
+          <a href="#">DECO*27s Best Friend Remix Hits 10M Views in a Week, Signaling Vocaloids Big Comeback??</a>
+        </div>
+      </div>
+      <div class="post">
+        <img src="ab67616d0000b2734dcb6c5df15cf74596ab25a4.jpg" alt="">
+        <div>
+          <span>LISTEN · NEWS</span>
+          <a href="#">“Endless Reign: How Much Longer Must We Witness Golden Hold the Podium On Every Single Platform?”</a>
+        </div>
+      </div>
+      <div class="post">
+        <img src="images.jpg" alt="">
+        <div>
+          <span>NEWS · TECH</span>
+          <a href="#">“From Hawaiian Roots to Global Revival: How the Ukulele, a Small Four-String Instrument, Continues to Create Big Musical Waves Around the World!”</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tags -->
+    <div class="footer-col">
+      <h4>Tags</h4>
+      <div class="tags">
+        <a href="#">artists</a>
+        <a href="#">audio</a>
+        <a href="#">dubstep</a>
+        <a href="#">fx</a>
+        <a href="#">glitchhop</a>
+        <a href="#">microphone</a>
+        <a href="#">mixer</a>
+        <a href="#">mixtape</a>
+        <a href="#">music</a>
+        <a href="#">soundcloud</a>
+        <a href="#">studio</a>
+        <a href="#">trap</a>
+        <a href="#">video</a>
+      </div>
+    </div>
+  </div>
+</footer>
+ <!-- Bottom Footer -->
+  <div class="footer-bottom">
+    <p>© 2025 Techsite. All rights reserved.</p>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+  </div>
+</footer> 
+  <script src="list.js"></script>
+</body>
+</html>
