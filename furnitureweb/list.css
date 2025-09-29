@@ -481,13 +481,15 @@ body{
 .feature-text {
   flex: 1;                    /* text takes remaining space */
 }
-
-.feature-image {
-  flex-shrink: 0;              /* don’t let image shrink */
+.feature-hero {
+  position: relative; /* make this the positioning context */
 }
 
-.feature-image img {
-  max-width: 400px;           /* control image size */
-  height: auto;
-  display: block;
+/* Override the default flex layout for .feature-image */
+.feature-image {
+  position: absolute;
+  top: 5%;          /* center vertically */
+  right: 40px;       /* stick to the right side */
+  transform: translateY(-50%); /* perfect vertical centering */
+  max-height: 0%;  /* keep it contained */
 }
